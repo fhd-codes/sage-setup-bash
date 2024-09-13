@@ -3,6 +3,9 @@
 # ==============================================================
 # Installing sage theme
 # ==============================================================
+# Going in the themes folder
+cd ../
+
 # Asking user to enter github repo url.
 echo "Enter the Git repository URL:"
 read git_repo_url
@@ -68,7 +71,7 @@ composer install
 
 echo "*************************"
 echo "Installing 'log1x/acf-composer'..."
-echo "Make sure you go to wp-admin side and install. Press any key to continue:"
+echo "Make sure you go to wp-admin side and install ACF Pro plugin. Press any key to continue:"
 read any_key
 
 composer require log1x/acf-composer
