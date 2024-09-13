@@ -10,6 +10,7 @@ Make sure the following are installed before running the script:
 - **Composer**
 - **Git**
 - **ACF Pro Plugin** (Available in your WordPress installation)
+- **WordPress PHP version should be 8.2 or above**
 
 ## How to Use
 
