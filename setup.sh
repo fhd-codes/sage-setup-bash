@@ -19,7 +19,7 @@ repo_name=$(echo "$git_repo_url" | sed 's#.*/##' | sed 's/\.git$//')
 # Converting the repo name to theme name (Sentence Case).
 theme_name=$(echo "$repo_name" | sed 's/-/ /g' | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) tolower(substr($i,2));}1')
 
-composer create-project roots/sage "$repo_name" ../
+composer create-project roots/sage "$repo_name"
 echo "Sage theme installed.."
 
 # Editing the style.css file and updating the theme name.

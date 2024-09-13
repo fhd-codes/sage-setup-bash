@@ -13,6 +13,8 @@ Make sure the following are installed before running the script:
 
 ## How to Use
 
+0. **Copy and paste this setup.sh file in the theme directory**
+
 1. **Create a GitHub Repository:**
    - Create an empty repository on GitHub. The repository name should be the name of your theme.
    - For example, if your repository is named `my-theme`, the bash script will use this repo name and set the theme name as `My Theme`.
