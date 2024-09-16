@@ -1,6 +1,37 @@
 #!/bin/bash
 
 # ==============================================================
+# Checking if the required packages are installed or not
+# ==============================================================
+# Function to check if a package is installed
+check_package() {
+  if ! command -v $1 &> /dev/null; then
+    echo "$1 is not installed. Exiting..."
+    exit 1
+  else
+    echo "$1 is installed."
+  fi
+}
+
+# List of packages to check
+packages=("npm" "composer" "git" "wp")
+
+# Loop through each package and check if it is installed
+for package in "${packages[@]}"
+do
+  check_package $package
+done
+
+echo "All required packages are installed."
+echo "---------------------------------------*********------------------"
+echo "Make sure the the website is running on PHP 8.2 or greater version"
+echo "---------------------------------------*********------------------"
+
+echo "Press any key to continue"
+read -rsn1
+
+
+# ==============================================================
 # Installing sage theme
 # ==============================================================
 # Asking user to enter github repo url.
@@ -69,7 +100,7 @@ composer install
 echo "*************************"
 echo "Installing 'log1x/acf-composer'..."
 echo "Make sure you go to wp-admin side and install ACF Pro plugin. Press any key to continue:"
-read any_key
+read -rsn1
 
 composer require log1x/acf-composer
 wp acorn optimize:clear
