@@ -35,7 +35,7 @@ read -rsn1
 # Installing sage theme
 # ==============================================================
 # Asking user to enter github repo url.
-echo "Enter the Git repository URL:"
+echo "Enter the Git repository URL (SSH or HTTPS):"
 read git_repo_url
 
 # Keep asking for the theme name if it is an empty string.
