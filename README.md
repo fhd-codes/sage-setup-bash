@@ -29,7 +29,7 @@ Make sure the following are installed before running the script:
 3. **Run the Bash Script:**
    - Execute the script in the terminal from the `themes` directory:
      ```bash
-     ./setup-sage.sh
+     ./setup.sh
      ```
 
 ## Bash Script Workflow
